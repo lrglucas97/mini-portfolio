@@ -38,7 +38,7 @@ body{
 .informacoes-abas{
     background: #0200b0;
     background: linear-gradient(135deg, #0200b0 0%, #010081 50%, #01001f 100%);
-    border: 3px solid;
+    border: 3px ridge;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -92,11 +92,18 @@ body{
     opacity: 50%;
 }
 
-.abas .aba:hover,
-.informacao .redes-sociais li:hover{
+.abas .aba:hover{
     background-image: url(../images/cursor.png);
     background-repeat: no-repeat;
     background-position: 30px;
+    background-size: 35px;
+    cursor: pointer;
+}
+
+.informacao .redes-sociais li:hover{
+    background-image: url(../images/cursor.png);
+    background-repeat: no-repeat;
+    background-position: 50px;
     background-size: 35px;
     cursor: pointer;
 }
@@ -137,21 +144,17 @@ body{
 .informacao .redes-sociais{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 25px;
+    gap: 40px;
     max-height: 180px;
-    overflow-y: auto;
 }
 
 .informacao .redes-sociais img{
     margin-bottom: -5px;
-    padding-left: 80px;
+    padding-left: 90px;
 }
 
 .informacao .redes-sociais li a{
-    display: inline-block;
     width: 180px;
-
     font-size: 20px;
     color: #f3f3f3;
     padding: 8px;
